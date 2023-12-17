@@ -23,4 +23,4 @@ jobs:
 
       - name: Build and push
         run: |
-          docker buildx build --platform linux/amd64,linux/arm64 -t rustincoul/flask_docker:latest . --push
+          docker buildx build --platform linux/amd64,linux/arm64 -t rustincoul/flask_docker:latest -f /webapp/Dockerfile . --push
